@@ -31,7 +31,6 @@ namespace VP_Assignment2
             int records = 0;
             string[] fileData;
             String filePath = "Data.txt";
-            
             fileData = File.ReadAllLines(filePath);
             count = fileData.Length;
             obj = new Student[count];
@@ -55,7 +54,6 @@ namespace VP_Assignment2
                       obj[records].cgpa = fileData[i];
                       i++;
                       temp++;
-                      
                       obj[records].department = fileData[i];
                       i++;
                       temp++;
@@ -68,7 +66,6 @@ namespace VP_Assignment2
                       obj[records].attendance = fileData[i];
                       i++;
                       temp++;  
-
                         listObj.Add(obj[records]);
                     }
                     dataGridListAll.DataSource = listObj;
@@ -85,7 +82,6 @@ namespace VP_Assignment2
             grpBoxTop3.Visible = false;
             grpBoxDeleteStudent.Visible = false;
             grpBoxMarkAttendance.Visible = false;
-            //grpBoxMarkAttendance.Visible = false;
            
         }
 
@@ -110,19 +106,12 @@ namespace VP_Assignment2
             {
 
             }
-            
-
-
 
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             reset();
-            grpBoxSearch.Visible = true;
-            
-
-            
+            grpBoxSearch.Visible = true;  
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -174,7 +163,7 @@ namespace VP_Assignment2
                 data+= obj.id + "\t" + obj.name + "\t\t" + obj.attendance + "\n";
             });
 
-            MessageBox.Show(data);
+            MessageBox.Show(data,"View Attendance");
 
         }
 
@@ -212,8 +201,6 @@ namespace VP_Assignment2
         {
             try
             {
-
-
                 String[] write = { txtAddId.Text, txtAddnAME.Text, txtAddCgpa.Text, txtAddDepartment.Text, txtAddUniversity.Text, txtAddNumeric.Value.ToString(), "N/A" };
                 File.AppendAllLines("Data.txt", write);
                 label10.Visible = true;
@@ -227,6 +214,7 @@ namespace VP_Assignment2
             catch(Exception o )
             {
                 label10.Text = "Adding Student Failed ! ";
+                label10.Visible = true;
             }
             
             
@@ -244,11 +232,6 @@ namespace VP_Assignment2
             reset();
 
             grpBoxMarkAttendance.Visible = true;
-
-           
-
-          
-
 
             DataTable attendanceTable = new DataTable();
 
@@ -321,8 +304,6 @@ namespace VP_Assignment2
 
                     listObj.ForEach(i =>
                     {
-
-
                         if (i.id == dataGridViewAttendance.Rows[e.RowIndex].Cells[0].Value)
                         {
                             i.attendance = "Absent";
@@ -334,7 +315,6 @@ namespace VP_Assignment2
                             String[] write = { i.id, i.name, i.cgpa, i.department, i.university, i.semester, i.attendance };
                             File.AppendAllLines("Data.txt", write);
                         }
-
                     });
                 }
             }
