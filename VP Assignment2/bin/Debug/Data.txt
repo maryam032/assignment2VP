@@ -19,3 +19,10 @@ BSE
 NUST
 8
 Present
+4
+Stduent
+3.8
+Electrical
+AIR
+3
+Present

@@ -167,6 +167,7 @@ namespace VP_Assignment2
         private void button5_Click(object sender, EventArgs e)
         {
             string data = "";
+            data += "ID\t Name\t\tAttendance\n";
 
             listObj.ForEach(obj=> {
             
@@ -231,7 +232,7 @@ namespace VP_Assignment2
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) 
         {
             reset();
             grpBoxAdd.Visible = true;
@@ -260,7 +261,14 @@ namespace VP_Assignment2
                 DataRow row = attendanceTable.NewRow();
                 row[0] = i.id;
                 row[1] = i.name;
-                row[2] = false;
+                if(i.attendance != "Present")
+                {
+                    row[2] = false;
+                }
+                else 
+                {
+                    row[2] = true;
+                }
 
                 attendanceTable.Rows.Add(row);
             
@@ -290,7 +298,7 @@ namespace VP_Assignment2
 
                         if (i.id == dataGridViewAttendance.Rows[e.RowIndex].Cells[0].Value)
                         {
-
+                            i.attendance = "Present";
                             String[] write = { i.id, i.name, i.cgpa, i.department, i.university, i.semester, "Present" };
                             File.AppendAllLines("Data.txt", write);
                         }
@@ -317,7 +325,7 @@ namespace VP_Assignment2
 
                         if (i.id == dataGridViewAttendance.Rows[e.RowIndex].Cells[0].Value)
                         {
-
+                            i.attendance = "Absent";
                             String[] write = { i.id, i.name, i.cgpa, i.department, i.university, i.semester, "Absent" };
                             File.AppendAllLines("Data.txt", write);
                         }

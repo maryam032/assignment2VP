@@ -371,6 +371,13 @@
             // txtAddUniversity
             // 
             this.txtAddUniversity.FormattingEnabled = true;
+            this.txtAddUniversity.Items.AddRange(new object[] {
+            "NUST",
+            "AIR",
+            "IBA",
+            "LUMS",
+            "BAHRIA",
+            "FAST"});
             this.txtAddUniversity.Location = new System.Drawing.Point(550, 130);
             this.txtAddUniversity.Name = "txtAddUniversity";
             this.txtAddUniversity.Size = new System.Drawing.Size(189, 23);
@@ -379,6 +386,13 @@
             // txtAddDepartment
             // 
             this.txtAddDepartment.FormattingEnabled = true;
+            this.txtAddDepartment.Items.AddRange(new object[] {
+            "Software",
+            "Electrical",
+            "Mechanical",
+            "Physcis",
+            "Law",
+            "Business"});
             this.txtAddDepartment.Location = new System.Drawing.Point(280, 130);
             this.txtAddDepartment.Name = "txtAddDepartment";
             this.txtAddDepartment.Size = new System.Drawing.Size(249, 23);
@@ -477,7 +491,7 @@
             // 
             this.grpBoxMarkAttendance.Controls.Add(this.dataGridViewAttendance);
             this.grpBoxMarkAttendance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpBoxMarkAttendance.Location = new System.Drawing.Point(145, 6);
+            this.grpBoxMarkAttendance.Location = new System.Drawing.Point(151, 6);
             this.grpBoxMarkAttendance.Name = "grpBoxMarkAttendance";
             this.grpBoxMarkAttendance.Size = new System.Drawing.Size(871, 239);
             this.grpBoxMarkAttendance.TabIndex = 3;
@@ -489,7 +503,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 593);
+            this.ClientSize = new System.Drawing.Size(926, 483);
             this.Controls.Add(this.grpBoxMarkAttendance);
             this.Controls.Add(this.grpBoxAdd);
             this.Controls.Add(this.grpBoxTop3);
