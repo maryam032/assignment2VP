@@ -1,0 +1,9 @@
+c:\users\maryam\documents\visual studio 2013\Projects\VP Assignment2\VP Assignment2\bin\Debug\VP Assignment2.exe.config
+c:\users\maryam\documents\visual studio 2013\Projects\VP Assignment2\VP Assignment2\bin\Debug\VP Assignment2.exe
+c:\users\maryam\documents\visual studio 2013\Projects\VP Assignment2\VP Assignment2\bin\Debug\VP Assignment2.pdb
+c:\users\maryam\documents\visual studio 2013\Projects\VP Assignment2\VP Assignment2\obj\Debug\VP Assignment2.csprojResolveAssemblyReference.cache
+c:\users\maryam\documents\visual studio 2013\Projects\VP Assignment2\VP Assignment2\obj\Debug\VP_Assignment2.Properties.Resources.resources
+c:\users\maryam\documents\visual studio 2013\Projects\VP Assignment2\VP Assignment2\obj\Debug\VP Assignment2.csproj.GenerateResource.Cache
+c:\users\maryam\documents\visual studio 2013\Projects\VP Assignment2\VP Assignment2\obj\Debug\VP Assignment2.exe
+c:\users\maryam\documents\visual studio 2013\Projects\VP Assignment2\VP Assignment2\obj\Debug\VP Assignment2.pdb
+c:\users\maryam\documents\visual studio 2013\Projects\VP Assignment2\VP Assignment2\obj\Debug\VP_Assignment2.Form1.resources
